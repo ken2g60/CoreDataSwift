@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17192" systemVersion="19H2" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Goals" representedClassName="GoalsMO" syncable="YES" codeGenerationType="class">
+        <attribute name="goalAchievableTime" attributeType="String"/>
+        <attribute name="goalAchieved" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <attribute name="goalCategory" optional="YES" attributeType="String"/>
+        <attribute name="goalDescription" optional="YES" attributeType="String"/>
+        <attribute name="goalImage" optional="YES" attributeType="Binary"/>
+        <attribute name="goalName" optional="YES" attributeType="String"/>
+        <attribute name="timeCreated" optional="YES" attributeType="String"/>
+    </entity>
+    <elements>
+        <element name="Goals" positionX="-63" positionY="-18" width="128" height="148"/>
+    </elements>
+</model>
