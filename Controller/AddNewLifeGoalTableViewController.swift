@@ -97,7 +97,6 @@ class AddNewLifeGoalTableViewController: UITableViewController, UIImagePickerCon
                 }
             }
             
-            
             present(photoSourceRequestController, animated: true, completion: nil)
         }
         
@@ -163,13 +162,11 @@ class AddNewLifeGoalTableViewController: UITableViewController, UIImagePickerCon
                 
                 // uiAlert
                 // return redirect
-                // performSegue(withIdentifier: "segueRecent", sender: nil)
                 
                 
                 appDelegate.saveContext()
                 let alertController = UIAlertController(title: "LifeGoal", message: "Goal Saved", preferredStyle: .alert)
                 let okController = UIAlertAction(title: "OK", style: .default) { (action) in
-                    // self.performSegue(withIdentifier: "segueRecent", sender: self)
                 }
                 
                 alertController.addAction(okController)

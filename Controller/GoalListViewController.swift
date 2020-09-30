@@ -26,7 +26,9 @@ class GoalListViewController: UIViewController, UITableViewDelegate, UITableView
     override func viewDidLoad() {
         super.viewDidLoad()
         
-    
+        
+        tableView.dataSource = self
+        tableView.delegate = self
         
         
         // fetching goals
@@ -56,17 +58,47 @@ class GoalListViewController: UIViewController, UITableViewDelegate, UITableView
         navigationController?.navigationBar.prefersLargeTitles = true
         
         searchController = UISearchController(searchResultsController: nil)
-        searchController.searchBar.placeholder = "Search"
+        tableView.tableHeaderView = searchController.searchBar
+        searchController.searchBar.placeholder = "Search Goals"
         searchController.searchBar.barTintColor = .white
         searchController.searchBar.backgroundImage = UIImage()
-        searchController.searchBar.tintColor = UIColor(red: 231, green: 76, blue: 60, alpha: 1)
-        
         
         // update search result
         searchController.searchResultsUpdater = self
         searchController.obscuresBackgroundDuringPresentation = false
+        
+        
+ 
        
 
+    }
+    
+    func controller(_ controller: NSFetchedResultsController<NSFetchRequestResult>, didChange anObject: Any, at indexPath: IndexPath?, for type: NSFetchedResultsChangeType, newIndexPath: IndexPath?) {
+        
+        
+        switch type {
+        case .insert:
+            if let newIndexPath = newIndexPath {
+                tableView.insertRows(at: [newIndexPath], with: .fade)
+            }
+        case .delete:
+            if let indexPath = indexPath {
+                tableView.deleteRows(at: [indexPath], with: .fade)
+            }
+        case .update:
+            if let indexPath = indexPath {
+                tableView.reloadRows(at: [indexPath], with: .fade)
+            }
+        default:
+            tableView.reloadData()
+        }
+        
+        if let fetchedObjects = controller.fetchedObjects {
+            goals = fetchedObjects as! [GoalsMO]
+        }
+    }
+    func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        tableView.endUpdates()
     }
     
     
@@ -89,14 +121,88 @@ class GoalListViewController: UIViewController, UITableViewDelegate, UITableView
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return goals.count
+        if searchController.isActive{
+            return goals.count
+        }else{
+            return goals.count
+        }
     }
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "goalsList", for: indexPath) as! LifeGoalTableViewCell
+        
+        cell.goalName.text = goals[indexPath.row].goalName
+        if let goalImage = goals[indexPath.row].goalImage {
+            cell.goalImage.image = UIImage(data: goalImage as Data)
+
+        }
+        cell.selectionStyle = .none
+        
         return cell
     }
     
+    
+    func controllerWillChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
+        tableView.beginUpdates()
+    }
+    
+    func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+        if searchController.isActive {
+            return false
+        }else{
+            return true
+        }
+    }
+    
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+     
+        let deleteAction = UIContextualAction(style: .destructive, title: "Delete") { (action, sourceView, completionHandler) in
+            if let appDelegate = (UIApplication.shared.delegate as? AppDelegate) {
+                let context = appDelegate.persistentContainer.viewContext
+                let goalToDelete = self.fetchResultController.object(at: indexPath)
+                
+                context.delete(goalToDelete)
+                appDelegate.saveContext()
+            }
+            completionHandler(true)
+        }
+        
+       
+        let shareAction = UIContextualAction(style: .normal, title: "Share") { (action, sourceView, completionHandler) in
+            let defaultText = "Share Goal " + self.goals[indexPath.row].goalName!
+            
+            let activityController: UIActivityViewController
+            
+            if let goalImage = self.goals[indexPath.row].goalImage, let imageToShare = UIImage(data: goalImage) {
+                activityController = UIActivityViewController(activityItems: [defaultText, imageToShare], applicationActivities: nil)
+            } else  {
+                activityController = UIActivityViewController(activityItems: [defaultText], applicationActivities: nil)
+            }
+            
+            // For iPad
+            if let popoverController = activityController.popoverPresentationController {
+                if let cell = tableView.cellForRow(at: indexPath) {
+                    popoverController.sourceView = cell
+                    popoverController.sourceRect = cell.bounds
+                }
+            }
+            
+            self.present(activityController, animated: true, completion: nil)
+            completionHandler(true)
+        }
+        
+        deleteAction.backgroundColor = UIColor(red: 231.0/255.0, green: 76.0/255.0, blue: 60.0/255.0, alpha: 1.0)
+        deleteAction.image = UIImage(systemName: "trash")
+
+        shareAction.backgroundColor = UIColor(red: 254.0/255.0, green: 149.0/255.0, blue: 38.0/255.0, alpha: 1.0)
+        shareAction.image = UIImage(systemName: "square.and.arrow.up")
+        
+        let swipeConfiguration = UISwipeActionsConfiguration(actions: [deleteAction, shareAction])
+        
+        return swipeConfiguration
+    }
+
 
 }
