@@ -8,6 +8,12 @@
 import UIKit
 
 class AboutTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var aboutLifeGoalDescription: UILabel! {
+        didSet {
+            aboutLifeGoalDescription.numberOfLines = 0
+        }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()

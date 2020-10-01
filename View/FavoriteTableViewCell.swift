@@ -9,6 +9,15 @@ import UIKit
 
 class FavoriteTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var goalName: UILabel!
+    @IBOutlet weak var goalImage: UIImageView!
+    @IBOutlet weak var goalDescription: UILabel! {
+        didSet {
+            goalDescription.numberOfLines = 0
+        }
+    }
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
