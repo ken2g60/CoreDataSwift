@@ -41,17 +41,17 @@
                                                     </constraints>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="YjF-pi-8Ta">
-                                                    <rect key="frame" x="122" y="11" width="42" height="21"/>
+                                                    <rect key="frame" x="122" y="11" width="272" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                             </subviews>
                                             <constraints>
-                                                <constraint firstAttribute="trailingMargin" secondItem="YjF-pi-8Ta" secondAttribute="trailing" constant="230" id="D7s-0k-BQY"/>
                                                 <constraint firstItem="nkR-5I-vCw" firstAttribute="leading" secondItem="S9Q-Kv-CUX" secondAttribute="leadingMargin" id="Ivp-0L-mE8"/>
                                                 <constraint firstItem="YjF-pi-8Ta" firstAttribute="top" secondItem="nkR-5I-vCw" secondAttribute="top" id="LwV-qL-jgk"/>
                                                 <constraint firstItem="YjF-pi-8Ta" firstAttribute="leading" secondItem="nkR-5I-vCw" secondAttribute="trailing" constant="8" symbolic="YES" id="NgO-wZ-RoF"/>
+                                                <constraint firstItem="YjF-pi-8Ta" firstAttribute="trailing" secondItem="S9Q-Kv-CUX" secondAttribute="trailingMargin" id="Wzo-pb-6a8"/>
                                                 <constraint firstItem="nkR-5I-vCw" firstAttribute="bottom" secondItem="S9Q-Kv-CUX" secondAttribute="bottomMargin" id="sBc-a6-dkR"/>
                                                 <constraint firstItem="nkR-5I-vCw" firstAttribute="top" relation="greaterThanOrEqual" secondItem="S9Q-Kv-CUX" secondAttribute="topMargin" id="tnE-28-eEF"/>
                                             </constraints>
