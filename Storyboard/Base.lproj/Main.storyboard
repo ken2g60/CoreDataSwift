@@ -39,11 +39,6 @@
                                                         <constraint firstAttribute="width" constant="94" id="nWL-Z3-syd"/>
                                                         <constraint firstAttribute="width" secondItem="nkR-5I-vCw" secondAttribute="height" multiplier="47:39" id="sau-Yb-nz4"/>
                                                     </constraints>
-                                                    <userDefinedRuntimeAttributes>
-                                                        <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
-                                                            <integer key="value" value="30"/>
-                                                        </userDefinedRuntimeAttribute>
-                                                    </userDefinedRuntimeAttributes>
                                                 </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="YjF-pi-8Ta">
                                                     <rect key="frame" x="122" y="11" width="42" height="21"/>
@@ -263,10 +258,10 @@
             </objects>
             <point key="canvasLocation" x="4015.9420289855075" y="803.57142857142856"/>
         </scene>
-        <!--View Controller-->
+        <!--About View Controller-->
         <scene sceneID="T1H-dF-OSX">
             <objects>
-                <viewController id="7rx-zc-he4" sceneMemberID="viewController">
+                <viewController id="7rx-zc-he4" customClass="AboutViewController" customModule="LifeGoals" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zxH-dy-NFL">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -293,7 +288,7 @@
                                     </constraints>
                                 </view>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="150" id="PuY-fz-da3">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="150" id="PuY-fz-da3" customClass="AboutTableViewCell" customModule="LifeGoals" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="228" width="414" height="150"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="PuY-fz-da3" id="q5S-xt-KNh">
@@ -306,7 +301,7 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LifeGoals about us goes here" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7p1-BR-tzP">
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="LifeGoals plan your goals for the future and moniter your plan and execution of achieving them." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="7p1-BR-tzP">
                                                     <rect key="frame" x="20" y="42" width="374" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -320,6 +315,9 @@
                                                 <constraint firstItem="0fA-s9-5if" firstAttribute="top" secondItem="q5S-xt-KNh" secondAttribute="topMargin" id="a2M-Rr-ifu"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="aboutLifeGoalDescription" destination="7p1-BR-tzP" id="52j-69-TdR"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
@@ -369,6 +367,45 @@
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GJx-Re-mNi">
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="favoriteCell" rowHeight="200" id="b9n-28-1ZA" customClass="FavoriteTableViewCell" customModule="LifeGoals" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="200"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="b9n-28-1ZA" id="SLy-Wm-vJ5">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="QaU-9T-YO4">
+                                                    <rect key="frame" x="0.0" y="0.0" width="414" height="200"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="200" id="IoY-Xi-aTa"/>
+                                                        <constraint firstAttribute="width" secondItem="QaU-9T-YO4" secondAttribute="height" multiplier="207:100" id="Miz-Ty-3GV"/>
+                                                        <constraint firstAttribute="width" constant="414" id="jiK-hI-4fs"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="Ybq-mj-0OK">
+                                                    <rect key="frame" x="20" y="168" width="41.5" height="21"/>
+                                                    <fontDescription key="fontDescription" name="Rubik-Light" family="Rubik" pointSize="17"/>
+                                                    <color key="textColor" systemColor="systemGray5Color"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="QaU-9T-YO4" secondAttribute="bottom" id="3ZA-7u-OuR"/>
+                                                <constraint firstAttribute="trailing" secondItem="QaU-9T-YO4" secondAttribute="trailing" id="3gl-JH-KVx"/>
+                                                <constraint firstItem="Ybq-mj-0OK" firstAttribute="bottom" secondItem="SLy-Wm-vJ5" secondAttribute="bottomMargin" id="LLO-1q-Qoe"/>
+                                                <constraint firstItem="Ybq-mj-0OK" firstAttribute="leading" secondItem="SLy-Wm-vJ5" secondAttribute="leadingMargin" id="bkp-zr-t3q"/>
+                                                <constraint firstItem="QaU-9T-YO4" firstAttribute="top" relation="greaterThanOrEqual" secondItem="SLy-Wm-vJ5" secondAttribute="top" id="bvC-J2-B27"/>
+                                                <constraint firstItem="QaU-9T-YO4" firstAttribute="leading" secondItem="SLy-Wm-vJ5" secondAttribute="leading" id="qq4-h5-uuj"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="goalImage" destination="QaU-9T-YO4" id="IGo-nu-agt"/>
+                                            <outlet property="goalName" destination="Ybq-mj-0OK" id="HVO-nA-hT2"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="MWw-1f-Jjb"/>
@@ -387,6 +424,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="GJx-Re-mNi" id="iuw-gf-KCw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qFN-kU-WeU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
