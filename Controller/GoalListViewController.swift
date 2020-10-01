@@ -203,6 +203,23 @@ class GoalListViewController: UIViewController, UITableViewDelegate, UITableView
         
         return swipeConfiguration
     }
+    
+    func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        
+        
+        let achievedAction = UIContextualAction(style: .normal, title: "Goal Achieved") { (action, sourceView, completionHandler) in
+            
+            let cell = tableView.cellForRow(at: indexPath)
+            self.goals[indexPath.row].goalAchieved = self.goals[indexPath.row].goalAchieved ? false : true
+            
+            completionHandler(true)
+        }
+        let achievedIcon = goals[indexPath.row].goalAchieved ? "arrow.uturn.left" : "checkmark"
+        
+        let swipeConfiguretion = UISwipeActionsConfiguration(actions: [achievedAction])
+        
+        return swipeConfiguretion
+    }
 
 
 }
