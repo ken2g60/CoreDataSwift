@@ -165,12 +165,27 @@ class AddNewLifeGoalTableViewController: UITableViewController, UIImagePickerCon
                 
                 
                 appDelegate.saveContext()
-                let alertController = UIAlertController(title: "LifeGoal", message: "Goal Saved", preferredStyle: .alert)
-                let okController = UIAlertAction(title: "OK", style: .default) { (action) in
-                }
                 
-                alertController.addAction(okController)
-                self.present(alertController, animated: true, completion: nil)
+//                DispatchQueue.main.async {
+//                    // self.performSegue(withIdentifier: "goalsHome", sender: self)
+//                    
+//                    if let viewController = UIStoryboard(name: "goalsHome", bundle: nil).instantiateViewController(withIdentifier: "GoalListViewController") as? GoalListViewController {
+//                        self.present(viewController, animated: true, completion: nil)
+//
+//                    }
+//                    
+//                    
+//                }
+                
+                
+//                let alertController = UIAlertController(title: "LifeGoal", message: "Goal Saved", preferredStyle: .alert)
+//                let okController = UIAlertAction(title: "OK", style: .default) { (action) in
+//                }
+//                
+//                alertController.addAction(okController)
+//                self.present(alertController, animated: true, completion: nil)
+                let controller = UIStoryboard(name: "Main", bundle: nil).instantiateViewController(withIdentifier: "GoalsListTabBar")
+                self.present(controller, animated: true, completion: nil)
                 
             }
         }
