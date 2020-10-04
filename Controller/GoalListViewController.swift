@@ -207,18 +207,28 @@ class GoalListViewController: UIViewController, UITableViewDelegate, UITableView
     func tableView(_ tableView: UITableView, leadingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
         
         
-        let achievedAction = UIContextualAction(style: .normal, title: "Goal Achieved") { (action, sourceView, completionHandler) in
-            
-            let cell = tableView.cellForRow(at: indexPath)
+        let achievedAction = UIContextualAction(style: .normal, title: "Goal Achieved") { [self] (action, sourceView, completionHandler) in
+
             self.goals[indexPath.row].goalAchieved = self.goals[indexPath.row].goalAchieved ? false : true
             
             completionHandler(true)
         }
-        let achievedIcon = goals[indexPath.row].goalAchieved ? "arrow.uturn.left" : "checkmark"
-        
+        achievedAction.backgroundColor = UIColor.systemGreen
+        achievedAction.image = UIImage(systemName: "hand.thumbsup")
+   
         let swipeConfiguretion = UISwipeActionsConfiguration(actions: [achievedAction])
-        
         return swipeConfiguretion
+    }
+    
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+    }
+   
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "showDetails" {
+            
+        }
     }
 
 
