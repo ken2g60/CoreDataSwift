@@ -107,7 +107,6 @@
 				0430E976252290840011F999 /* AppDelegate.swift */,
 				0430E978252290840011F999 /* SceneDelegate.swift */,
 				0430E982252290840011F999 /* Assets.xcassets */,
-				0430E984252290840011F999 /* LaunchScreen.storyboard */,
 				0430E987252290840011F999 /* Info.plist */,
 				0430E97F252290840011F999 /* LifeGoals.xcdatamodeld */,
 			);
@@ -128,6 +127,7 @@
 		0430E98F252290F50011F999 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
+				0430E984252290840011F999 /* LaunchScreen.storyboard */,
 				0430E97C252290840011F999 /* Main.storyboard */,
 			);
 			path = Storyboard;
