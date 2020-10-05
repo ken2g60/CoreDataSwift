@@ -31,6 +31,7 @@ class GoalListViewController: UIViewController, UITableViewDelegate, UITableView
         tableView.delegate = self
         
         
+        
         // fetching goals
         let fetchRequest: NSFetchRequest<GoalsMO> = GoalsMO.fetchRequest()
         let sortDescriptor = NSSortDescriptor(key: "goalName", ascending: false)
@@ -222,14 +223,18 @@ class GoalListViewController: UIViewController, UITableViewDelegate, UITableView
     
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        self.performSegue(withIdentifier: "showDetails", sender: self)
     }
    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "showDetails" {
-            
+            if let indexPath = tableView.indexPathForSelectedRow {
+                let destinationController = segue.destination as! GoalDetailViewController
+                destinationController.goal = goals[indexPath.row]
+            }
         }
     }
+    
 
 
 }
