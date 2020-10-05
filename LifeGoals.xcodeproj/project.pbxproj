@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		041790FB252AA5830061F919 /* GoalDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 041790FA252AA5830061F919 /* GoalDetailViewController.swift */; };
 		0430E977252290840011F999 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430E976252290840011F999 /* AppDelegate.swift */; };
 		0430E979252290840011F999 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430E978252290840011F999 /* SceneDelegate.swift */; };
 		0430E97E252290840011F999 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0430E97C252290840011F999 /* Main.storyboard */; };
@@ -38,6 +39,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		041790FA252AA5830061F919 /* GoalDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalDetailViewController.swift; sourceTree = "<group>"; };
 		0430E973252290840011F999 /* LifeGoals.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LifeGoals.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0430E976252290840011F999 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0430E978252290840011F999 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -120,6 +122,7 @@
 				0430E99725229D980011F999 /* FavoriteViewController.swift */,
 				0430E99A25229DD90011F999 /* AboutViewController.swift */,
 				0430E9BD2522C38C0011F999 /* AddNewLifeGoalTableViewController.swift */,
+				041790FA252AA5830061F919 /* GoalDetailViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -267,6 +270,7 @@
 				0430E992252296160011F999 /* GoalListViewController.swift in Sources */,
 				0430E99825229D980011F999 /* FavoriteViewController.swift in Sources */,
 				0430E9CA25240BAA0011F999 /* LifeGoalTableViewCell.swift in Sources */,
+				041790FB252AA5830061F919 /* GoalDetailViewController.swift in Sources */,
 				04BA85952525493300A3726F /* FavoriteTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
