@@ -22,6 +22,9 @@ class FavoriteViewController: UIViewController, UITableViewDelegate, UITableView
         tableView.dataSource = self
         tableView.delegate = self
         
+        // remove separator
+        self.tableView.separatorStyle = .none
+        
         // fetched achieved goals
         let fetchRequest: NSFetchRequest<GoalsMO> = GoalsMO.fetchRequest()
         let sortDescriptor = NSSortDescriptor(key: "goalAchieved", ascending: false)
