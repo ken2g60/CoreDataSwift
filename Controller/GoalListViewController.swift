@@ -30,7 +30,8 @@ class GoalListViewController: UIViewController, UITableViewDelegate, UITableView
         tableView.dataSource = self
         tableView.delegate = self
         
-        
+        // navigationbar title
+        self.navigationItem.title = "Life Goals"
         
         // fetching goals
         let fetchRequest: NSFetchRequest<GoalsMO> = GoalsMO.fetchRequest()
@@ -104,6 +105,7 @@ class GoalListViewController: UIViewController, UITableViewDelegate, UITableView
             goals = fetchedObjects as! [GoalsMO]
         }
     }
+    
     func controllerDidChangeContent(_ controller: NSFetchedResultsController<NSFetchRequestResult>) {
         tableView.endUpdates()
     }

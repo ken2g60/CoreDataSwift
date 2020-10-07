@@ -25,6 +25,9 @@ class FavoriteViewController: UIViewController, UITableViewDelegate, UITableView
         // remove separator
         self.tableView.separatorStyle = .none
         
+        // reloadData
+        tableView.reloadData()
+        
         // fetched achieved goals
         let fetchRequest: NSFetchRequest<GoalsMO> = GoalsMO.fetchRequest()
         let sortDescriptor = NSSortDescriptor(key: "goalAchieved", ascending: false)
@@ -48,6 +51,7 @@ class FavoriteViewController: UIViewController, UITableViewDelegate, UITableView
         }
 
     }
+    
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return goals.count
