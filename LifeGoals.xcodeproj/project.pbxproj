@@ -13,7 +13,6 @@
 		0430E97E252290840011F999 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0430E97C252290840011F999 /* Main.storyboard */; };
 		0430E981252290840011F999 /* LifeGoals.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0430E97F252290840011F999 /* LifeGoals.xcdatamodeld */; };
 		0430E983252290840011F999 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0430E982252290840011F999 /* Assets.xcassets */; };
-		0430E986252290840011F999 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0430E984252290840011F999 /* LaunchScreen.storyboard */; };
 		0430E992252296160011F999 /* GoalListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430E991252296160011F999 /* GoalListViewController.swift */; };
 		0430E99825229D980011F999 /* FavoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430E99725229D980011F999 /* FavoriteViewController.swift */; };
 		0430E99B25229DD90011F999 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430E99A25229DD90011F999 /* AboutViewController.swift */; };
@@ -36,6 +35,11 @@
 		0430E9CA25240BAA0011F999 /* LifeGoalTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0430E9C925240BAA0011F999 /* LifeGoalTableViewCell.swift */; };
 		04BA85952525493300A3726F /* FavoriteTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA85942525493300A3726F /* FavoriteTableViewCell.swift */; };
 		04BA859825254E9300A3726F /* AboutTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04BA859725254E9300A3726F /* AboutTableViewCell.swift */; };
+		04C81507252D2B240028F701 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C81506252D2B240028F701 /* Onboarding.storyboard */; };
+		04C8150B252D2D160028F701 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 04C8150A252D2D160028F701 /* LaunchScreen.storyboard */; };
+		04C81514252D45360028F701 /* WalkthroughContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81513252D45360028F701 /* WalkthroughContentViewController.swift */; };
+		04C81517252D46DC0028F701 /* WalkthroughPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C81516252D46DC0028F701 /* WalkthroughPageViewController.swift */; };
+		04C8151B252D4C9A0028F701 /* WalkthroughViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 04C8151A252D4C9A0028F701 /* WalkthroughViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -46,7 +50,6 @@
 		0430E97D252290840011F999 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		0430E980252290840011F999 /* LifeGoals.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = LifeGoals.xcdatamodel; sourceTree = "<group>"; };
 		0430E982252290840011F999 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		0430E985252290840011F999 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0430E987252290840011F999 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0430E991252296160011F999 /* GoalListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoalListViewController.swift; sourceTree = "<group>"; };
 		0430E99725229D980011F999 /* FavoriteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteViewController.swift; sourceTree = "<group>"; };
@@ -70,6 +73,11 @@
 		0430E9C925240BAA0011F999 /* LifeGoalTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LifeGoalTableViewCell.swift; sourceTree = "<group>"; };
 		04BA85942525493300A3726F /* FavoriteTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteTableViewCell.swift; sourceTree = "<group>"; };
 		04BA859725254E9300A3726F /* AboutTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTableViewCell.swift; sourceTree = "<group>"; };
+		04C81506252D2B240028F701 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		04C8150A252D2D160028F701 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		04C81513252D45360028F701 /* WalkthroughContentViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughContentViewController.swift; sourceTree = "<group>"; };
+		04C81516252D46DC0028F701 /* WalkthroughPageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughPageViewController.swift; sourceTree = "<group>"; };
+		04C8151A252D4C9A0028F701 /* WalkthroughViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WalkthroughViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +131,9 @@
 				0430E99A25229DD90011F999 /* AboutViewController.swift */,
 				0430E9BD2522C38C0011F999 /* AddNewLifeGoalTableViewController.swift */,
 				041790FA252AA5830061F919 /* GoalDetailViewController.swift */,
+				04C81513252D45360028F701 /* WalkthroughContentViewController.swift */,
+				04C81516252D46DC0028F701 /* WalkthroughPageViewController.swift */,
+				04C8151A252D4C9A0028F701 /* WalkthroughViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -130,8 +141,9 @@
 		0430E98F252290F50011F999 /* Storyboard */ = {
 			isa = PBXGroup;
 			children = (
-				0430E984252290840011F999 /* LaunchScreen.storyboard */,
 				0430E97C252290840011F999 /* Main.storyboard */,
+				04C8150A252D2D160028F701 /* LaunchScreen.storyboard */,
+				04C81506252D2B240028F701 /* Onboarding.storyboard */,
 			);
 			path = Storyboard;
 			sourceTree = "<group>";
@@ -234,7 +246,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				0430E9BB2522BFCE0011F999 /* Rubik-Black.ttf in Resources */,
-				0430E986252290840011F999 /* LaunchScreen.storyboard in Resources */,
 				0430E9B32522BFCE0011F999 /* Rubik-Bold.ttf in Resources */,
 				0430E9B62522BFCE0011F999 /* Rubik-BlackItalic.ttf in Resources */,
 				0430E9AF2522BFCE0011F999 /* Rubik-Italic.ttf in Resources */,
@@ -243,11 +254,13 @@
 				0430E9B42522BFCE0011F999 /* Rubik-BoldItalic.ttf in Resources */,
 				0430E9B92522BFCE0011F999 /* Rubik-Light.ttf in Resources */,
 				0430E9B02522BFCE0011F999 /* Rubik-SemiBold.ttf in Resources */,
+				04C8150B252D2D160028F701 /* LaunchScreen.storyboard in Resources */,
 				0430E9BA2522BFCE0011F999 /* Rubik-LightItalic.ttf in Resources */,
 				0430E983252290840011F999 /* Assets.xcassets in Resources */,
 				0430E9B72522BFCE0011F999 /* Rubik-Medium.ttf in Resources */,
 				0430E9B12522BFCE0011F999 /* Rubik-ExtraBoldItalic.ttf in Resources */,
 				0430E9B52522BFCE0011F999 /* Rubik-MediumItalic.ttf in Resources */,
+				04C81507252D2B240028F701 /* Onboarding.storyboard in Resources */,
 				0430E9B82522BFCE0011F999 /* Rubik-ExtraBold.ttf in Resources */,
 				0430E97E252290840011F999 /* Main.storyboard in Resources */,
 			);
@@ -269,8 +282,11 @@
 				0430E979252290840011F999 /* SceneDelegate.swift in Sources */,
 				0430E992252296160011F999 /* GoalListViewController.swift in Sources */,
 				0430E99825229D980011F999 /* FavoriteViewController.swift in Sources */,
+				04C8151B252D4C9A0028F701 /* WalkthroughViewController.swift in Sources */,
+				04C81514252D45360028F701 /* WalkthroughContentViewController.swift in Sources */,
 				0430E9CA25240BAA0011F999 /* LifeGoalTableViewCell.swift in Sources */,
 				041790FB252AA5830061F919 /* GoalDetailViewController.swift in Sources */,
+				04C81517252D46DC0028F701 /* WalkthroughPageViewController.swift in Sources */,
 				04BA85952525493300A3726F /* FavoriteTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,14 +300,6 @@
 				0430E97D252290840011F999 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		0430E984252290840011F999 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				0430E985252290840011F999 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
