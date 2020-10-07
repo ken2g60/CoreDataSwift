@@ -15,6 +15,7 @@ class WalkthroughPageViewController: UIPageViewController, UIPageViewControllerD
     
     weak var walkthroughDelegate: WalkthroughPageViewControllerDelegate?
     
+    
     var pageHeadings = ["Life Prorities", "Manage Your Time", "Have Fun"]
     var pageImages = ["onboarding-1", "onboarding-2", "onboarding-3"]
     var pageSubHeadings = ["Life Decision Making", "Target Tasks", "Relax"]

@@ -36,5 +36,113 @@
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "31E55DCA-1BF3-4E9C-9544-394616DA2764"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "Controller/WalkthroughPageViewController.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "20"
+            endingLineNumber = "20"
+            landmarkName = "WalkthroughPageViewController"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "31E55DCA-1BF3-4E9C-9544-394616DA2764 - 81ead88a26c10796"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LifeGoals.WalkthroughPageViewController.pageImages.getter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "LifeGoals"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/LifeGoals/Controller/WalkthroughPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "122">
+               </Location>
+               <Location
+                  uuid = "31E55DCA-1BF3-4E9C-9544-394616DA2764 - 7959f1bb8080f362"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LifeGoals.WalkthroughPageViewController.pageImages.setter : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "LifeGoals"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/LifeGoals/Controller/WalkthroughPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "148">
+               </Location>
+               <Location
+                  uuid = "31E55DCA-1BF3-4E9C-9544-394616DA2764 - 4039d71d6957d401"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LifeGoals.WalkthroughPageViewController.pageImages.modify : Swift.Array&lt;Swift.String&gt;"
+                  moduleName = "LifeGoals"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/LifeGoals/Controller/WalkthroughPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "18">
+               </Location>
+               <Location
+                  uuid = "31E55DCA-1BF3-4E9C-9544-394616DA2764 - 2a8aef8d1a42fa24"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LifeGoals.WalkthroughPageViewController.pageImages.modify : Swift.Array&lt;Swift.String&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "LifeGoals"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/LifeGoals/Controller/WalkthroughPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "4">
+               </Location>
+               <Location
+                  uuid = "31E55DCA-1BF3-4E9C-9544-394616DA2764 - 110242fca1ba0780"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LifeGoals.WalkthroughPageViewController.init(transitionStyle: __C.UIPageViewControllerTransitionStyle, navigationOrientation: __C.UIPageViewControllerNavigationOrientation, options: Swift.Optional&lt;Swift.Dictionary&lt;__C.UIPageViewControllerOptionsKey, Any&gt;&gt;) -&gt; LifeGoals.WalkthroughPageViewController"
+                  moduleName = "LifeGoals"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/LifeGoals/Controller/WalkthroughPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "684">
+               </Location>
+               <Location
+                  uuid = "31E55DCA-1BF3-4E9C-9544-394616DA2764 - ac65aa9b0b736711"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "LifeGoals.WalkthroughPageViewController.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;LifeGoals.WalkthroughPageViewController&gt;"
+                  moduleName = "LifeGoals"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/mac/Desktop/LifeGoals/Controller/WalkthroughPageViewController.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "20"
+                  endingLineNumber = "20"
+                  offsetFromSymbolStart = "598">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
    </Breakpoints>
 </Bucket>
